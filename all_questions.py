@@ -314,19 +314,19 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ["Hierarchical","overlapping","complete"]
+    answers["(a)"] = ['Hierarchical','overlapping','complete']
 
     # type: list
-    answers["(b)"] = ["Partitional","exclusive","complete"]
+    answers["(b)"] = ['Partitional','exclusive','complete']
 
     # type: list
-    answers["(c)"] = ["partitional","fuzzy","complete"]
+    answers["(c)"] = ['partitional','fuzzy','complete']
 
     # type: list
-    answers["(d)"] = ["hierarchical","overlapping","partial"]
+    answers["(d)"] = ['Hierarchical','overlapping','partial']
 
     # type: list
-    answers["(e)"] = ["Partitional","exclusive","complete"]
+    answers["(e)"] = ['Partitional','exclusive','complete']
 
     # type: explanatory string (at least four words)
     answers["(e) explain"] = ""
