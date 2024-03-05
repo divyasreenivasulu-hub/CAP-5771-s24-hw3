@@ -239,7 +239,7 @@ def question7():
     answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "The overall entropy for cluster 1 is low and has  has the lowest uncertainty or variability, indicating a more homogeneous distribution of objects across categories
+    answers["(b) explain"] = "The overall entropy for cluster 1 is low and has  has the lowest uncertainty or variability, indicating a more homogeneous distribution of objects across categories."
     return answers
 
 
@@ -310,7 +310,7 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ["Hierarchical",overlapping","complete"]
+    answers["(a)"] = ["Hierarchical","overlapping","complete"]
 
     # type: list
     answers["(b)"] = ["Partitional","exclusive","complete"]
