@@ -27,7 +27,7 @@ def question1():
     answers["(c) explain"] = "For large datasets it may take  more time also other than k-means DBSCAN is more efficient"
 
     # type: bool (True/False)
-    answers["(d)"] = "decreases"
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = "SSE of the clustering increases as splitting creates an additional variance"
@@ -51,14 +51,10 @@ def question1():
     answers["(g) explain"] = "Cohesion and separation are two distinct concepts in clustering. Improving cohesion (decreasing SSE) within clusters doesn't necessarily mean improving separation (increasing SSB) between clusters."
 
     # type: bool (True/False)
-    answers["(h)"] = False
+    answers["(h)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = "SSE + SSB (between sum of squares) is not constant. The total variance in the data, represented by SSE + SSB, typically decreases as the clustering algorithm iterates."
-
-    # type: bool (True/False)
-    answers["(i)"] = False
-
+    answers["(h) explain"] = "SSE + SSB (between sum of squares) is  constant. 
     # type: explanatory string (at least four words)
     answers["(i) explain"] = "Cohesion and separation are independent measures in clustering. Increasing cohesion (decreasing SSE) within clusters doesn't necessarily imply an increase in separation (SSB) between clusters."
 
@@ -72,19 +68,19 @@ def question2():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = True
+    answers["(a)"] = True 
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: bool (True/False)
-    answers["(b)"] = True
+    answers["(b)"] = False
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
 
     # type: bool (True/False)
-    answers["(c)"] = False
+    answers["(c)"] = True
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = ""
@@ -99,13 +95,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = 3R^2
+    answers["(a) SSE"] = "4*R**2"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = 4R^2
+    answers["(b) SSE"] = "4*squart(a^2 + b^2)"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = 4R^2
+    answers["(c) SSE"] = "5*R**2"
 
     return answers
 
@@ -144,13 +140,13 @@ def question4():
     answers["(c) Circle (a)"] = 1
 
     # type: int
-    answers["(c) Circle (b)"] = 1
+    answers["(c) Circle (b)"] = 0
 
     # type: int
     answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "With two clusters in circle C and assuming circle B is closer to A than C, it's likely that one centroid will represent the cluster within circle B."
+    answers["(c) explain"] = "With two centroids in circle C and assuming circle B is closer to A than C, it's likely that one centroid will remain same."
 
     return answers
 
@@ -162,14 +158,14 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set(A,B)
+    answers["(a)"] = {"Group A","Group B"}
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = "Groups A and B will be merged since they have the smallest single link distance(between the last point of a and 1st point of b)as compared to groups A,C and Groups B and C"
 
 
     # type: set
-    answers["(b)"] = set(A,C)
+    answers["(b)"] = {"Group A","Group C")
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = "Since group A and c has smallest complete distance as compared to complete link distance of groups A,B and B,c"
@@ -184,19 +180,19 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set()
+    answers["(a) core"] = {'E','B','F','G','C','L,,'M','I'}
 
     # type: set
-    answers["(a) boundary"] = set()
+    answers["(a) boundary"] = {'D','G'}
 
     # type: set
-    answers["(a) noise"] = set()
+    answers["(a) noise"] = {'A','H'}
 
     # type: set
-    answers["(b) cluster 1"] = set()
+    answers["(b) cluster 1"] = {'B','C','E','F','G','E','D'}
 
     # type: set
-    answers["(b) cluster 2"] = set()
+    answers["(b) cluster 2"] = {'I','J','L','M'}
 
     # type: set
     answers["(b) cluster 3"] = set()
@@ -205,19 +201,19 @@ def question6():
     answers["(b) cluster 4"] = set()
 
     # type: set
-    answers["(c)-a core"] = set()
+    answers["(c)-a core"] = {'B','C','D','E','F','H','I','J','L','M'}
 
     # type: set
-    answers["(c)-a boundary"] = set()
+    answers["(c)-a boundary"] = {'A','H'}
 
     # type: set
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = set()
+    answers["(c)-b cluster 1"] = {'A','B','C','D','E','F','G','H','I','J','L','M'}
 
     # type: set
-    answers["(c)-b cluster 2"] = set()
+    answers["(c)-b cluster 2"] = {'A'}
 
     # type: set
     answers["(c)-b cluster 3"] = set()
@@ -235,16 +231,15 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = ""
+    answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
-
+    answers["(a) explain"] = " The overall entropy for cluster 4 is high and has the highest uncertainty or variability in its distribution of objects across different categories.
     # type: string
-    answers["(b)"] = ""
+    answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "The overall entropy for cluster 1 is low and has  has the lowest uncertainty or variability, indicating a more homogeneous distribution of objects across categories
     return answers
 
 
@@ -255,7 +250,7 @@ def question8():
     answers = {}
 
     # type: string
-    answers["(a) Matrix 1"] = ""
+    answers["(a) Matrix 1"] = "Dataset-z"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 1"] = ""
@@ -264,7 +259,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 1"] = ""
 
     # type: string
-    answers["(a) Matrix 2"] = ""
+    answers["(a) Matrix 2"] = "Dataset-x"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 2"] = ""
@@ -273,7 +268,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 2"] = ""
 
     # type: string
-    answers["(a) Matrix 3"] = ""
+    answers["(a) Matrix 3"] = "Dataset-y"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 3"] = ""
@@ -282,16 +277,16 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 3"] = ""
 
     # type: string
-    answers["(b) Row 1"] = ""
+    answers["(b) Row 1"] = "Cluster-a"
 
     # type: string
-    answers["(b) Row 2"] = ""
+    answers["(b) Row 2"] = "Cluster-b"
 
     # type: string
-    answers["(b) Row 3"] = ""
+    answers["(b) Row 3"] = "Cluster-c"
 
     # type: string
-    answers["(b) Row 4"] = ""
+    answers["(b) Row 4"] = "Cluster-d"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
@@ -315,7 +310,7 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ["Hierarchical",overlapping","complete"]
+    answers["(a)"] = ["Hierarchical",overlapping","complete(p)"]
 
     # type: list
     answers["(b)"] = ["Partitional","exclusive","complete"]
@@ -327,7 +322,7 @@ def question9():
     answers["(d)"] = ["hierarchical","overlapping","partial"]
 
     # type: list
-    answers["(e)"] = ["hierarchical","overlapping","complete"]
+    answers["(e)"] = ["Partitional","exclusive","complete"]
 
     # type: explanatory string (at least four words)
     answers["(e) explain"] = ""
@@ -342,25 +337,25 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = ""
+    answers["(a) Figure (a)"] = "No"
 
     # type: string
-    answers["(a) Figure (b)"] = ""
+    answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "In FIG B,the approach is effective in finding facial representation by accessing the spatial density of datapoints"
 
     # type: string
-    answers["(b) Figure (a)"] = ""
+    answers["(b) Figure (a)"] = "No"
 
     # type: string
-    answers["(b) Figure (b)"] = ""
+    answers["(b) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "it is a technique which groups comparable datapoints together inorder to identify patterns within the dataset.k-means can be used to find patterns depending on dimensions,positions and shapes."
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "DBSCAN"
 
     return answers
 
