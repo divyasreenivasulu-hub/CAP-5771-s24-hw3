@@ -74,19 +74,20 @@ def question2():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "each circle has one centroid at its center once it completes the k-eans algorithm"
 
     # type: bool (True/False)
     answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "2 clusters have points from the both shaded regions"
 
     # type: bool (True/False)
     answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "contains an empty cluster"
+
 
     return answers
 
@@ -98,13 +99,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = "4*R^2"
+    answers["(a) SSE"] = "4*R**2"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = "4*squart(a^2+b^2)"
+    answers["(b) SSE"] = "4*squart(a**2 + b**2 + c**2)"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = "5*R^2"
+    answers["(c) SSE"] = "10* R **2"
 
     return answers
 
@@ -125,7 +126,7 @@ def question4():
     answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Optimal clustering takes place"
+    answers["(a) explain"] = "As the distance from A to B and B to C  is same despite the data  K-means clustering converge to 1 centroid per circle"
 
     # type: int
     answers["(b) Circle (a)"] = 1
@@ -137,7 +138,7 @@ def question4():
     answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "The distance between circle A and B and Circle B and C are similar, So the centroid has to converge inside its original circle."
+    answers["(b) explain"] = "Since no centroids are initially placed within circle C, it's probable that one centroid will eventually move towards circle C, capturing the data points within it and forming a cluster."
 
     # type: int
     answers["(c) Circle (a)"] = 1
@@ -164,13 +165,13 @@ def question5():
     answers["(a)"] = {"Group A", "Group B"}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Groups A and B would be considered for merging because the closest points (or edges) between these two groups are shorter than the distances between other groups."
+    answers["(a) explain"] = "Groups A and B will be merged since they have the smallest single link distance(between the last point of a and 1st point of b)as compared to groups A,C and Groups B and C"
 
     # type: set
     answers["(b)"] = {"Group A", "Group C"}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Under the complete link criterion, they exhibit the smallest maximum inter-cluster distance compared to the other pairs of groups"
+    answers["(b) explain"] = "Since group A and c has smallest complete distance as compared to complete link distance of groups A,B and B,C"
 
     return answers
 
