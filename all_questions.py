@@ -243,7 +243,7 @@ def question7():
     answers["(b)"] = "cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "The overall entropy for cluster 1 is low and has  has the lowest uncertainty or variability."
+    answers["(b) explain"] = "The overall entropy for cluster 1 is low and has the lowest uncertainty or variability."
 
     return answers
 
@@ -258,10 +258,10 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset-z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = "The blue indicates low distances, suggesting well-separated clusters."
+    answers["(a) explain diag entries, Matrix 1"] = "The blue indicates low distances, which suggests well-separated clusters."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = "Different patterns of colors suggest another set of cluster distributions."
+    answers["(a) explain non-diag entries, Matrix 1"] = "Different patterns of colors suggest the another set of cluster distributions."
 
     # type: string
     answers["(a) Matrix 2"] = "Dataset-x"
