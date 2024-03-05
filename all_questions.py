@@ -1,4 +1,4 @@
-# Add import files
+ # Add import files
 import pickle
 
 
@@ -71,19 +71,19 @@ def question2():
     answers["(a)"] = True 
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "each circle has one centroid at its center once it completes the k-eans algorithm"
 
     # type: bool (True/False)
     answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "2 clusters have points from the both shaded regions"
 
     # type: bool (True/False)
     answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "contains an empty cluster"
 
     return answers
 
@@ -95,7 +95,7 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = "4*R**2"
+    answers["(a) SSE"] = "4*R^2"
 
     # type: a string that evaluates to a float
     answers["(b) SSE"] = "4*squart(a^2 + b^2)"
@@ -180,7 +180,7 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = {'E','B','F','G','C','L,,'M','I'}
+    answers["(a) core"] = {'E','B','F','G','C','L','M','I'}
 
     # type: set
     answers["(a) boundary"] = {'D','G'}
@@ -234,7 +234,7 @@ def question7():
     answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = " The overall entropy for cluster 4 is high and has the highest uncertainty or variability in its distribution of objects across different categories.
+    answers["(a) explain"] = " The overall entropy for cluster 4 is high and has the highest uncertainty or variability in its distribution of objects across different categories."
     # type: string
     answers["(b)"] = "Cluster 1"
 
@@ -310,7 +310,7 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ["Hierarchical",overlapping","complete(p)"]
+    answers["(a)"] = ["Hierarchical",overlapping","complete"]
 
     # type: list
     answers["(b)"] = ["Partitional","exclusive","complete"]
