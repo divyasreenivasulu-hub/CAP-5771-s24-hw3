@@ -55,6 +55,10 @@ def question1():
 
     # type: explanatory string (at least four words)
     answers["(h) explain"] = "SSE + SSB (between sum of squares) is  constant." 
+ 
+    # type: bool (True/False)
+    answers["(i)"] = False
+ 
     # type: explanatory string (at least four words)
     answers["(i) explain"] = "Cohesion and separation are independent measures in clustering. Increasing cohesion (decreasing SSE) within clusters doesn't necessarily imply an increase in separation (SSB) between clusters."
 
