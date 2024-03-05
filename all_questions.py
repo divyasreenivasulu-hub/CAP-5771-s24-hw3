@@ -66,7 +66,6 @@ def question1():
 
 
 
-
 # -----------------------------------------------------------
 def question2():
     answers = {}
@@ -167,7 +166,6 @@ def question5():
     # type: explanatory string (at least four words)
     answers["(a) explain"] = "Groups A and B will be merged since they have the smallest single link distance(between the last point of a and 1st point of b)as compared to groups A,C and Groups B and C"
 
-
     # type: set
     answers["(b)"] = {"Group A","Group C")
 
@@ -244,7 +242,9 @@ def question7():
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = "The overall entropy for cluster 1 is low and has  has the lowest uncertainty or variability, indicating a more homogeneous distribution of objects across categories."
+    
     return answers
+
 
 
 
