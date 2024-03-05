@@ -54,7 +54,7 @@ def question1():
     answers["(h)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = "SSE + SSB (between sum of squares) is  constant. 
+    answers["(h) explain"] = "SSE + SSB (between sum of squares) is  constant." 
     # type: explanatory string (at least four words)
     answers["(i) explain"] = "Cohesion and separation are independent measures in clustering. Increasing cohesion (decreasing SSE) within clusters doesn't necessarily imply an increase in separation (SSB) between clusters."
 
@@ -168,7 +168,7 @@ def question5():
     answers["(b)"] = {"Group A","Group C")
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Since group A and c has smallest complete distance as compared to complete link distance of groups A,B and B,c"
+    answers["(b) explain"] = "Since group A and c has smallest complete distance as compared to complete link distance of groups A,B and B,C"
 
     return answers
 
