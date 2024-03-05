@@ -192,7 +192,7 @@ def question6():
     answers["(a) noise"] = {'A', 'H'}
 
     # type: set
-    answers["(b) cluster 1"] = {'B', 'C', 'E', 'F', 'G', 'E', 'D'}
+    answers["(b) cluster 1"] = {'B', 'C', 'E', 'F', 'G', 'D'}
 
     # type: set
     answers["(b) cluster 2"] = {'I', 'J', 'L', 'M'}
@@ -237,13 +237,13 @@ def question7():
     answers["(a)"] = "cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Cluster 4 has the highest entropy, indicating that it contains a diverse mix of land cover types."
+    answers["(a) explain"] = "The overall entropy for cluster 4 is high and has the highest uncertainty or variability in its distribution of objects across different categories."
 
     # type: string
     answers["(b)"] = "cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Cluster 1 has the lowest entropy, a more homogeneous set of land cover categories can be found within it."
+    answers["(b) explain"] = "The overall entropy for cluster 1 is low and has  has the lowest uncertainty or variability."
 
     return answers
 
@@ -279,19 +279,19 @@ def question8():
     answers["(a) explain diag entries, Matrix 3"] = "Diagonal entry corresponds to the distance of a point from itself."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = "Some green and yellow regions indicate overlapping or less distinct clusters."
+    answers["(a) explain non-diag entries, Matrix 3"] = "Some of the green and yellow regions indicates  overlapping or less distinct clusters."
 
     # type: string
-    answers["(b) Row 1"] = "Cluster-a"
+    answers["(b) Row 1"] = "A"
 
     # type: string
-    answers["(b) Row 2"] = "Cluster-b"
+    answers["(b) Row 2"] = "B"
 
     # type: string
-    answers["(b) Row 3"] = "Cluster-c"
+    answers["(b) Row 3"] = "C"
 
     # type: string
-    answers["(b) Row 4"] = "Cluster-d"
+    answers["(b) Row 4"] = "D"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
@@ -315,7 +315,7 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ['hierarchical', 'overlapping', 'partial']
+    answers["(a)"] = ['hierarchical', 'overlapping','complete']
 
     # type: list
     answers["(b)"] = ['partitional', 'exclusive', 'complete']
@@ -348,7 +348,7 @@ def question10():
     answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "In FIG B, DBSCAN can be effective for finding facial representations by assessing the spatial density of the data points."
+    answers["(a) explain"] = "In FIG B,the approach is effective in finding facial representation by accessing the spatial density of datapoints"
 
     # type: string
     answers["(b) Figure (a)"] = "No"
