@@ -141,7 +141,7 @@ def question4():
     answers["(b) explain"] = "Since no centroids are initially placed within circle C, it's probable that one centroid will eventually move towards circle C, capturing the data points within it and forming a cluster."
 
     # type: int
-    answers["(c) Circle (a)"] = 1
+    answers["(c) Circle (a)"] = 0
 
     # type: int
     answers["(c) Circle (b)"] = 0
